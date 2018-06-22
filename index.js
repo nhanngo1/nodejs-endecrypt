@@ -4,6 +4,8 @@ const rsa = require('./rsa');
 const object = {
     hero: "sniper",
     level: 10,
+    kill: 5,
+    death: 3,
     lastHit: 50,
     denied: 5,
     alive: true
