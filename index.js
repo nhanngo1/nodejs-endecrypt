@@ -1,7 +1,7 @@
 const rsa = require('./rsa');
 
 // test data
-const object = {
+const testData = {
     hero: "sniper",
     level: 10,
     kill: 5,
@@ -10,13 +10,6 @@ const object = {
     denied: 5,
     alive: true
 }
-
-let string = "test: my string";
-let boolean = true;
-let number = 100;
-
-// app start here
-let testData = object;
 
 console.log('testData: ', testData);
 console.log("==>", typeof testData);
