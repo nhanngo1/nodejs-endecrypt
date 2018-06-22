@@ -1,20 +1,28 @@
-const NodeRSA = require('node-rsa');
-const key = new NodeRSA({ b: 1024 });
+const rsa = require('./rsa');
 
+// test data
 const object = {
     hero: "sniper",
     level: 10,
-    lastHit: 30,
-    denied: 5
+    lastHit: 50,
+    denied: 5,
+    alive: true
 }
 
-console.log('object: ', object);
-console.log("==>", typeof object)
+let string = "test: my string";
+let boolean = true;
+let number = 100;
 
-const encrypted = key.encrypt(object, 'base64');
+// app start here
+let testData = object;
+
+console.log('testData: ', testData);
+console.log("==>", typeof testData);
+
+let encrypted = rsa.encrypt(testData);
 console.log('\nencrypted: ', encrypted);
-console.log("==>", typeof encrypted)
+console.log('==>', typeof encrypted);
 
-const decrypted = JSON.parse(key.decrypt(encrypted, 'utf8'));
+let decrypted = rsa.decrypt(encrypted);
 console.log('\ndecrypted: ', decrypted);
-console.log("==>", typeof decrypted)
+console.log('==>', typeof decrypted);
