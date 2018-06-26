@@ -1,8 +1,8 @@
 {
-    "name": "endecrypt-nngo",
-    "version": "0.1.0",
+    "name": "endecrypt-nhanngo",
+    "version": "0.1.2",
     "description": "Encrypt a object to string and descript a string to object ",
-    "main": "index.js",
+    "main": "rsa.js",
     "scripts": {
         "test": "node index.js"
     },
