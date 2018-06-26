@@ -1,6 +1,6 @@
 {
-    "name": "endecrypt",
-    "version": "1.0.0",
+    "name": "endecrypt-nngo",
+    "version": "0.1.0",
     "description": "Encrypt a object to string and descript a string to object ",
     "main": "index.js",
     "scripts": {
