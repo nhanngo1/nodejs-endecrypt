@@ -1,4 +1,4 @@
-# Encrypt and descript
+# Encrypt and decrypt
 Encrypt a object to a token string and decrypt token string to object
 
 ## Installation
