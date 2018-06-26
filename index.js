@@ -11,13 +11,15 @@ const testData = {
     alive: true
 }
 
-console.log('testData: ', testData);
-console.log("==>", typeof testData);
+function test(obj) {
+    console.log('testData: ', testData);
+    let en = rsa.encrypt(testData)
+    console.log('\nencrypted: ', en);
+    console.log('==>', typeof en);
 
-let encrypted = rsa.encrypt(testData);
-console.log('\nencrypted: ', encrypted);
-console.log('==>', typeof encrypted);
+    let de = rsa.decrypt(en);
+    console.log('\ndecrypted: ', de);
+    console.log('==>', typeof de);
+}
 
-let decrypted = rsa.decrypt(encrypted);
-console.log('\ndecrypted: ', decrypted);
-console.log('==>', typeof decrypted);
+test()
